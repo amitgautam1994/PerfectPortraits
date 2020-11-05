@@ -577,7 +577,7 @@ a:focus{
 }
 .portfolio-item .content .icon{
 	-webkit-transform: translate(-50%, -50%) scale(0);
-	transform: translate(-50%, -50%), scale(0);
+	transform: translate(-50%, -50%) scale(0);
 	font-size: 34px;
 	-webkit-transition: all .3s;
 	transition: all .3s;	
@@ -877,11 +877,7 @@ a:focus{
 .blog-list .menu-button{
 	top: 20px !important;
 }
-#breadcrumbs{
-	background: url(../img/blog/blog-list/breadcrumbs.jpg);
-	-webkit-background-size: cover;
-	background-size: cover;
-}
+
 #breadcrumbs .color-overlay{
 	width: 100%;
 	height: 100%;

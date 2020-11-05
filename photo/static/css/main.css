@@ -121,7 +121,7 @@ a:focus{
 	position: absolute;
 	left: 50%;
 	-webkit-transform: translateZ(-50%);
-	transform: translateZ(-50%);	
+	transform: translateZ(-50%);
 }
 .vertical-center{
 	position: absolute;
@@ -290,12 +290,7 @@ a:focus{
   font-weight: 300;
   color: #fff;
 }
-#home-slider .caption-wide{margin-top: -204px;}
-#home-slider .caption .main-title {
-  color: #fff;
-  font-size: 90px;
-  font-weight: 700;
-  margin-bottom: 20px;
+
 }
 #home-slider .caption .sub-title{
 	font-size: 40px;
@@ -343,6 +338,8 @@ a:focus{
 .navbar-brand h1 {
   margin-top: 5px;
 }
+
+
 /*-----  End of home-slider  ------*/
 
 

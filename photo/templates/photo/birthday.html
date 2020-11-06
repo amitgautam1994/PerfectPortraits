@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Perfect Portraits - Wedding</title>
+    <title>Perfect Portraits - Birthday</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -50,15 +50,29 @@
     <div class="main-nav">
         <div class="logo-left">
             <a data-scroll href="{% url 'index' %}">
-                <img style="width: 20%; height: 5%;" src="{% static "logo.png" %}" alt="logo">
+                <img src="{% static "img/images.png" %}" alt="logo">
             </a>
         </div>
-
+        <div class="menu-button toggle-menu menu-right push-body">
+            <button><i class="fa fa-bars"></i></button>
+        </div>
     </div> <!-- //end main-nav -->
 
     <!--=========================
         Start area for Menu
     ============================== -->
+    <nav id="main-navigation" class="nav-menu nav-menu-vertical nav-menu-right">
+        <ul class="list-inline">
+            <li class="current"><a href="#home">home</a></li>
+            <li><a href="#features">Our Services</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#teams">The Team</a></li>
+            <li><a href="#latest-blog">Blog</a></li>
+            <li><a href="#client-feedback">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- End of menu area -->
 

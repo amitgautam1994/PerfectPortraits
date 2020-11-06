@@ -50,7 +50,7 @@
     <div class="main-nav">
         <div class="logo-left">
             <a data-scroll href="{% url 'index' %}">
-                <img src="{% static "img/images.png" %}" alt="logo">
+                <img style="width: 15%; height: 3%;" src="{% static "logo.png" %}" alt="logo">
             </a>
         </div>
         <div class="menu-button toggle-menu menu-right push-body">
@@ -65,10 +65,8 @@
         <ul class="list-inline">
             <li class="current"><a href="#home">home</a></li>
             <li><a href="#features">Our Services</a></li>
-            <li><a href="#courses">Courses</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#teams">The Team</a></li>
-            <li><a href="#latest-blog">Blog</a></li>
             <li><a href="#client-feedback">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -119,7 +117,7 @@
     <section id="features">
         <div class="container">
             <div class="row">
-
+                <a href="{% url 'wedding' %}">
                 <div class="col-md-4 feature-item">
                     <div class="content wow fadeInDown" data-wow-delay=".15s">
                         <p class="icon text-center"><i class="fa fa-camera-retro"></i></p>
@@ -130,28 +128,30 @@
                             world!
                         </p>
                     </div>
-                </div>
+                </div></a>
+                <a href="{% url 'prewedding' %}">
                 <div class="col-md-4 feature-item">
                     <div class="content wow fadeInDown" data-wow-delay=".35s">
                         <p class="icon text-center"><i class="fa fa-male"></i></p>
-                        <h5 class="title text-center">Portfolio Photoshoot</h5>
+                        <h5 class="title text-center">Pre-Wedding Photoshoot</h5>
                         <p class="info">
                             This free website template is the first step to get you started with your personal
                             photography website. Learn the game and get some fame. Don't restrict your photography
                             viewership to your close circle.
                     </div>
-                </div>
+                </div></a>
+                <a href="{% url 'birthday' %}">
                 <div class="col-md-4 feature-item">
                     <div class="content wow fadeInDown" data-wow-delay=".55s">
                         <p class="icon text-center"><i class="fa fa-users"></i></p>
-                        <h5 class="title text-center">Festival Coverage</h5>
+                        <h5 class="title text-center">Birthday Photoshoot</h5>
                         <p class="info">
                             This quality free website template is the best way to save money and time to get started
                             with your photography website. The minimal things that you need are a little personalization
                             in terms of color theme.
                         </p>
                     </div>
-                </div>
+                </div> </a>
             </div> <!-- //row -->
         </div> <!-- //container -->
     </section>
@@ -378,10 +378,10 @@
         <div class="clearfix"></div>
 
         <div class="row">
-            <div class="col-lg-3 col-sm-6 col-xs-12 team-member wow fadeInDown" data-wow-delay=".25s">
+            <div class="col-lg-4 col-sm-6 col-xs-12 team-member wow fadeInDown" data-wow-delay=".25s">
                 <div class="content">
                     <figure class="member-pic">
-                        <img src="{% static "img/team/01.jpg" %}" alt="team-member" class="img-100p">
+                        <img src="{% static "img/team/sam.png" %}" alt="team-member" class="img-100p">
                         <figcaption class="caption">
                             <div class="color-overlay overflow-content-full">
                                 <ul class="social-icon horizontal-vertical-center list-inline">
@@ -394,7 +394,7 @@
                     </figure>
                     <div class="member-info">
                         <p class="position">Wedding Photography Chief</p>
-                        <p class="name">John Dongi</p>
+                        <p class="name">Samshad Ali</p>
                         <p>
                             This free website template is the first step to get you started with your personal
                             photography website.
@@ -402,10 +402,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12 team-member wow fadeInDown" data-wow-delay=".45s">
+            <div class="col-lg-4 col-sm-6 col-xs-12 team-member wow fadeInDown" data-wow-delay=".45s">
                 <div class="content">
                     <figure class="member-pic">
-                        <img src="{% static "img/team/02.jpg" %}" alt="team-member" class="img-100p">
+                        <img src="{% static "img/team/jeewan.png" %}" alt="team-member" class="img-100p">
                         <figcaption class="caption">
                             <div class="color-overlay overflow-content-full">
                                 <ul class="social-icon horizontal-vertical-center list-inline">
@@ -418,7 +418,7 @@
                     </figure>
                     <div class="member-info">
                         <p class="position">Festival Photography Chief</p>
-                        <p class="name">John Donga</p>
+                        <p class="name">Jeewan Singh</p>
                         <p>
                             Learn the game and get some fame. Don't restrict your photography viewership to your
                             close circle.
@@ -426,10 +426,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12 team-member wow fadeInDown" data-wow-delay=".65s">
+            <div class="col-lg-4 col-sm-6 col-xs-12 team-member wow fadeInDown" data-wow-delay=".65s">
                 <div class="content">
                     <figure class="member-pic">
-                        <img src="{% static "img/team/03.jpg" %}" alt="team-member" class="img-100p">
+                        <img src="{% static "img/team/amit.jpg" %}" alt="team-member" class="img-100p">
                         <figcaption class="caption">
                             <div class="color-overlay overflow-content-full">
                                 <ul class="social-icon horizontal-vertical-center list-inline">
@@ -442,36 +442,14 @@
                     </figure>
                     <div class="member-info">
                         <p class="position">Photography Template Designer</p>
-                        <p class="name">Johhny D.</p>
+                        <p class="name">Amit Gautam</p>
                         <p>
                             Go beyond and make it public on your photography website.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12 team-member wow fadeInDown" data-wow-delay=".85s">
-                <div class="content">
-                    <figure class="member-pic">
-                        <img src="{% static "img/team/04.jpg" %}" alt="team-member" class="img-100p">
-                        <figcaption class="caption">
-                            <div class="color-overlay overflow-content-full">
-                                <ul class="social-icon horizontal-vertical-center list-inline">
-                                    <li><a href="#"><i class="fa fa-facebook-official "></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus-square "></i></a></li>
-                                </ul>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="member-info">
-                        <p class="position">Photography Template Developer</p>
-                        <p class="name">J. Dongian</p>
-                        <p>
-                            This week's free website template by Frittt is a photography website.
-                        </p>
-                    </div>
-                </div>
-            </div>
+
         </div> <!-- //row -->
     </div> <!-- //container -->
 </section>
@@ -615,18 +593,13 @@
             </div>
             <div class="col-sm-4 col-sm-offset-4">
                 <ul class="social-icon-footer list-inline mtb50">
-                    <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                    <li><a href="https://www.facebook.com/portraitsperfect"><i class="fa fa-facebook-square"></i></a></li>
                     <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
                     <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-                    <li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
-                    <li><a href="#"><i class="fa fa-tumblr-square"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCdUGzZH2Mo4YnNSZEtawCww"><i class="fa fa-youtube-square"></i></a></li>
                     <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
                 </ul>
-                <form action="#" class="form subscribe-form">
-                    <p class="text-uppercase mtb20">get subscribed to the photography tips and news</p>
-                    <input type="email" class="form-control" placeholder="Enter your email:">
-                </form>
+
             </div>
         </div> <!-- //row -->
     </div> <!-- //container -->

@@ -89,9 +89,6 @@
                 <div class="item active" style="background-image: url({% static "img/slider/01.jpg" %})">
                     <div class="col-sm-offset-1 caption caption-wide">
 
-
-                        <a class="btn btn-start wow fadeInUp" href="#features" data-scroll data-wow-delay=".85s">Learn
-                            More</a>
                     </div>
                 </div><!-- //item -->
                 <div class="item" style="background-image: url({% static "img/slider/02.jpg" %})">
@@ -102,9 +99,6 @@
                 <div class="item" style="background-image: url({% static "img/slider/03.jpg" %})">
                     <div class="col-sm-offset-1 caption">
                         <h1 class="main-title wow fadeInUp" data-wow-delay=".25s">Cherish every<br/>moment</h1>
-                        <p class="sub-title wow fadeInUp" data-wow-delay=".55s">Up & Running in minutes</p>
-                        <a class="btn btn-start wow fadeInUp" href="#features" data-scroll data-wow-delay=".85s">Read
-                            More</a>
                     </div>
                 </div><!-- //item -->
             </div>
@@ -118,47 +112,193 @@
         <div class="container">
             <div class="row">
                 <a href="{% url 'wedding' %}">
-                <div class="col-md-4 feature-item">
-                    <div class="content wow fadeInDown" data-wow-delay=".15s">
-                        <p class="icon text-center"><i class="fa fa-camera-retro"></i></p>
-                        <h5 class="title text-center">Wedding Photography</h5>
-                        <p class="info">
-                            Who doesn't want to share their camera art with friends and family on social media? But why
-                            not share them on your own personal photography website and showcase your camera art to the
-                            world!
-                        </p>
+                    <div class="col-md-4 feature-item">
+                        <div class="content wow fadeInDown" data-wow-delay=".15s">
+                            <p class="icon text-center"><i class="fa fa-camera-retro"></i></p>
+                            <h5 class="title text-center">Wedding Photography</h5>
+                            <p class="info">
+                                Who doesn't want to share their camera art with friends and family on social media? But
+                                why
+                                not share them on your own personal photography website and showcase your camera art to
+                                the
+                                world!
+                            </p>
+                        </div>
                     </div>
-                </div></a>
+                </a>
                 <a href="{% url 'prewedding' %}">
-                <div class="col-md-4 feature-item">
-                    <div class="content wow fadeInDown" data-wow-delay=".35s">
-                        <p class="icon text-center"><i class="fa fa-male"></i></p>
-                        <h5 class="title text-center">Pre-Wedding Photoshoot</h5>
-                        <p class="info">
-                            This free website template is the first step to get you started with your personal
-                            photography website. Learn the game and get some fame. Don't restrict your photography
-                            viewership to your close circle.
+                    <div class="col-md-4 feature-item">
+                        <div class="content wow fadeInDown" data-wow-delay=".35s">
+                            <p class="icon text-center"><i class="fa fa-male"></i></p>
+                            <h5 class="title text-center">Pre-Wedding Photoshoot</h5>
+                            <p class="info">
+                                This free website template is the first step to get you started with your personal
+                                photography website. Learn the game and get some fame. Don't restrict your photography
+                                viewership to your close circle.
+                        </div>
                     </div>
-                </div></a>
+                </a>
                 <a href="{% url 'birthday' %}">
-                <div class="col-md-4 feature-item">
-                    <div class="content wow fadeInDown" data-wow-delay=".55s">
-                        <p class="icon text-center"><i class="fa fa-users"></i></p>
-                        <h5 class="title text-center">Birthday Photoshoot</h5>
-                        <p class="info">
-                            This quality free website template is the best way to save money and time to get started
-                            with your photography website. The minimal things that you need are a little personalization
-                            in terms of color theme.
-                        </p>
+                    <div class="col-md-4 feature-item">
+                        <div class="content wow fadeInDown" data-wow-delay=".55s">
+                            <p class="icon text-center"><i class="fa fa-users"></i></p>
+                            <h5 class="title text-center">Birthday Photoshoot</h5>
+                            <p class="info">
+                                This quality free website template is the best way to save money and time to get started
+                                with your photography website. The minimal things that you need are a little
+                                personalization
+                                in terms of color theme.
+                            </p>
+                        </div>
                     </div>
-                </div> </a>
+                </a>
             </div> <!-- //row -->
         </div> <!-- //container -->
     </section>
     <!-- ========= //End features section ========= -->
 
 
-    <!-- ============== Start courses section ============== -->
+    <!-- ============== Start portfolio section ============== -->
+    <section id="portfolio" class="mtb100">
+        <div class="container">
+            <h3 class="section-title wow fadeInDown">Our Portfolio</h3>
+            <p class="section-info col-sm-8 col-sm-offset-2 wow fadeInDown" data-wow-delay=".25s">
+                Perfect Portraits likes to capture life's moments as we thinks that it goes too fast. She focuses on
+                pre-wedding, wedding, birthday, and many more photography.
+            </p>
+            <div class="clearfix"></div>
+
+            <div class="portfolio-content">
+
+                <div class="portfolio-items">
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item festival wedding">
+                        <figure class="content wow fadeIn" data-wow-delay=".15s">
+                            <img src="{% static "img/portfolio/01.jpg" %}/" class="img-100p" alt="portfolio">
+                            <figcaption class="overflow-content-full">
+                                <p class="icon horizontal-vertical-center">
+                                    <a data-lightbox="portfolio" href="{% static "img/portfolio/main-01.jpg" %}"><i
+                                            class="fa fa-search-plus"></i></a>
+                                </p>
+                                <div class="caption text-center">
+                                    <p class="title">John Donga</p>
+                                    <p class="info">Lorem Ipsum is simply dummy text of the printing industry. </p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item festival birthday">
+                        <figure class="content wow fadeIn" data-wow-delay=".25s">
+                            <img src="{% static "img/portfolio/02.jpg" %}" class="img-100p" alt="portfolio">
+                            <figcaption class="overflow-content-full">
+                                <p class="icon horizontal-vertical-center">
+                                    <a data-lightbox="portfolio" href="{% static "img/portfolio/main-02.jpg" %}"><i
+                                            class="fa fa-search-plus"></i></a>
+                                </p>
+                                <div class="caption text-center">
+                                    <p class="title">John Donga</p>
+                                    <p class="info">Lorem Ipsum is simply dummy text of the printing industry. </p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item engagement">
+                        <figure class="content wow fadeIn" data-wow-delay=".35s">
+                            <img src="{% static "img/portfolio/03.jpg" %}" class="img-100p" alt="portfolio">
+                            <figcaption class="overflow-content-full">
+                                <p class="icon horizontal-vertical-center">
+                                    <a data-lightbox="portfolio" href="{% static "img/portfolio/main-03.jpg" %}"><i
+                                            class="fa fa-search-plus"></i></a>
+                                </p>
+                                <div class="caption text-center">
+                                    <p class="title">John Donga</p>
+                                    <p class="info">Lorem Ipsum is simply dummy text of the printing industry. </p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item birthday wedding hit-and-run">
+                        <figure class="content wow fadeIn" data-wow-delay=".45s">
+                            <img src="{% static "img/portfolio/04.jpg" %}" class="img-100p" alt="portfolio">
+                            <figcaption class="overflow-content-full">
+                                <p class="icon horizontal-vertical-center">
+                                    <a data-lightbox="portfolio" href="{% static "img/portfolio/main-04.jpg" %}"><i
+                                            class="fa fa-search-plus"></i></a>
+                                </p>
+                                <div class="caption text-center">
+                                    <p class="title">John Donga</p>
+                                    <p class="info">Lorem Ipsum is simply dummy text of the printing industry. </p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item engagement birthday hit-and-run">
+                        <figure class="content wow fadeIn" data-wow-delay=".55s">
+                            <img src="{% static "img/portfolio/05.jpg" %}" class="img-100p" alt="portfolio">
+                            <figcaption class="overflow-content-full">
+                                <p class="icon horizontal-vertical-center">
+                                    <a data-lightbox="portfolio" href="{% static "img/portfolio/main-05.jpg" %}"><i
+                                            class="fa fa-search-plus"></i></a>
+                                </p>
+                                <div class="caption text-center">
+                                    <p class="title">John Donga</p>
+                                    <p class="info">Lorem Ipsum is simply dummy text of the printing industry. </p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item festival wedding hit-and-run">
+                        <figure class="content wow fadeIn" data-wow-delay=".65s">
+                            <img src="{% static "img/portfolio/06.jpg" %}" class="img-100p" alt="portfolio">
+                            <figcaption class="overflow-content-full">
+                                <p class="icon horizontal-vertical-center">
+                                    <a data-lightbox="portfolio" href="{% static "img/portfolio/main-06.jpg" %}"><i
+                                            class="fa fa-search-plus"></i></a>
+                                </p>
+                                <div class="caption text-center">
+                                    <p class="title">John Donga</p>
+                                    <p class="info">Lorem Ipsum is simply dummy text of the printing industry. </p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item festival wedding">
+                        <figure class="content wow fadeIn" data-wow-delay=".75s">
+                            <img src="{% static "img/portfolio/07.jpg" %}" class="img-100p" alt="portfolio">
+                            <figcaption class="overflow-content-full">
+                                <p class="icon horizontal-vertical-center">
+                                    <a data-lightbox="portfolio" href="{% static "img/portfolio/main-07.jpg" %}"><i
+                                            class="fa fa-search-plus"></i></a>
+                                </p>
+                                <div class="caption text-center">
+                                    <p class="title">John Donga</p>
+                                    <p class="info">Lorem Ipsum is simply dummy text of the printing industry. </p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item engagement hit-and-run">
+                        <figure class="content wow fadeIn" data-wow-delay=".85s">
+                            <img src="{% static "img/portfolio/08.jpg" %}" class="img-100p" alt="portfolio">
+                            <figcaption class="overflow-content-full">
+                                <p class="icon horizontal-vertical-center">
+                                    <a data-lightbox="portfolio" href="{% static "img/portfolio/main-08.jpg" %}"><i
+                                            class="fa fa-search-plus"></i></a>
+                                </p>
+                                <div class="caption text-center">
+                                    <p class="title">John Donga</p>
+                                    <p class="info">Lorem Ipsum is simply dummy text of the printing industry. </p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- // container -->
+    </section>
+    <!-- ========= //End portfolio section ========= -->
+
+
+    <!-- ============== Start About section ============== -->
     <section id="courses">
         <div class="color-overlay ptb100">
             <div class="container">
@@ -180,7 +320,8 @@
                     Perfect Portraits has a visionary management, who keeps an eye on the trend in photographs. Thus it
                     can tell you the poses in which you can get the photographs clicked. If you are in a dilemma about
                     the poses or you are totally unaware of the poses you can shoot for the wedding, the Photo Studio in
-                    Delhi guide you the best. Whatever may be the status of the wedding, whether it is a big fat wedding or a small
+                    Delhi guide you the best. Whatever may be the status of the wedding, whether it is a big fat wedding
+                    or a small
                     and heart winning function only with your close relative, the Photo Studio in Delhi gives you the
                     best photographers, Candid Photographers. The Photo Studio in Delhi has all the equipment required
                     to shoot outdoor also in case you choose a destination wedding. Perfect Portraits is the best photo
@@ -192,152 +333,6 @@
 </div>
 </section>
 <!-- ========= //End courses section ========= -->
-
-
-<!-- ============== Start portfolio section ============== -->
-<section id="portfolio" class="mtb100">
-    <div class="container">
-        <h3 class="section-title wow fadeInDown">Our Portfolio</h3>
-        <p class="section-info col-sm-8 col-sm-offset-2 wow fadeInDown" data-wow-delay=".25s">
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-            alteration in some form, by injected humour, or randomised words.
-        </p>
-        <div class="clearfix"></div>
-
-        <div class="portfolio-content">
-            <ul class="portfolio-filter text-center list-inline mtb40 text-uppercase">
-                <li><a class="active" href="#" data-filter="*"> All</a></li>
-                <li><a href="#" data-filter=".wedding">Wedding</a></li>
-                <li><a href="#" data-filter=".festival">Festival</a></li>
-                <li><a href="#" data-filter=".engagement">Engagement</a></li>
-                <li><a href="#" data-filter=".birthday">Birthday</a></li>
-            </ul>
-            <div class="portfolio-items">
-                <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item festival wedding">
-                    <figure class="content wow fadeIn" data-wow-delay=".15s">
-                        <img src="{% static "img/portfolio/01.jpg" %}/" class="img-100p" alt="portfolio">
-                        <figcaption class="overflow-content-full">
-                            <p class="icon horizontal-vertical-center">
-                                <a data-lightbox="portfolio" href="{% static "img/portfolio/main-01.jpg" %}"><i
-                                        class="fa fa-search-plus"></i></a>
-                            </p>
-                            <div class="caption text-center">
-                                <p class="title">John Donga</p>
-                                <p class="info">Lorem Ipsum is simply dummy text of the printing industry. </p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item festival birthday">
-                    <figure class="content wow fadeIn" data-wow-delay=".25s">
-                        <img src="{% static "img/portfolio/02.jpg" %}" class="img-100p" alt="portfolio">
-                        <figcaption class="overflow-content-full">
-                            <p class="icon horizontal-vertical-center">
-                                <a data-lightbox="portfolio" href="{% static "img/portfolio/main-02.jpg" %}"><i
-                                        class="fa fa-search-plus"></i></a>
-                            </p>
-                            <div class="caption text-center">
-                                <p class="title">John Donga</p>
-                                <p class="info">Lorem Ipsum is simply dummy text of the printing industry. </p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item engagement">
-                    <figure class="content wow fadeIn" data-wow-delay=".35s">
-                        <img src="{% static "img/portfolio/03.jpg" %}" class="img-100p" alt="portfolio">
-                        <figcaption class="overflow-content-full">
-                            <p class="icon horizontal-vertical-center">
-                                <a data-lightbox="portfolio" href="{% static "img/portfolio/main-03.jpg" %}"><i
-                                        class="fa fa-search-plus"></i></a>
-                            </p>
-                            <div class="caption text-center">
-                                <p class="title">John Donga</p>
-                                <p class="info">Lorem Ipsum is simply dummy text of the printing industry. </p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item birthday wedding hit-and-run">
-                    <figure class="content wow fadeIn" data-wow-delay=".45s">
-                        <img src="{% static "img/portfolio/04.jpg" %}" class="img-100p" alt="portfolio">
-                        <figcaption class="overflow-content-full">
-                            <p class="icon horizontal-vertical-center">
-                                <a data-lightbox="portfolio" href="{% static "img/portfolio/main-04.jpg" %}"><i
-                                        class="fa fa-search-plus"></i></a>
-                            </p>
-                            <div class="caption text-center">
-                                <p class="title">John Donga</p>
-                                <p class="info">Lorem Ipsum is simply dummy text of the printing industry. </p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item engagement birthday hit-and-run">
-                    <figure class="content wow fadeIn" data-wow-delay=".55s">
-                        <img src="{% static "img/portfolio/05.jpg" %}" class="img-100p" alt="portfolio">
-                        <figcaption class="overflow-content-full">
-                            <p class="icon horizontal-vertical-center">
-                                <a data-lightbox="portfolio" href="{% static "img/portfolio/main-05.jpg" %}"><i
-                                        class="fa fa-search-plus"></i></a>
-                            </p>
-                            <div class="caption text-center">
-                                <p class="title">John Donga</p>
-                                <p class="info">Lorem Ipsum is simply dummy text of the printing industry. </p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item festival wedding hit-and-run">
-                    <figure class="content wow fadeIn" data-wow-delay=".65s">
-                        <img src="{% static "img/portfolio/06.jpg" %}" class="img-100p" alt="portfolio">
-                        <figcaption class="overflow-content-full">
-                            <p class="icon horizontal-vertical-center">
-                                <a data-lightbox="portfolio" href="{% static "img/portfolio/main-06.jpg" %}"><i
-                                        class="fa fa-search-plus"></i></a>
-                            </p>
-                            <div class="caption text-center">
-                                <p class="title">John Donga</p>
-                                <p class="info">Lorem Ipsum is simply dummy text of the printing industry. </p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item festival wedding">
-                    <figure class="content wow fadeIn" data-wow-delay=".75s">
-                        <img src="{% static "img/portfolio/07.jpg" %}" class="img-100p" alt="portfolio">
-                        <figcaption class="overflow-content-full">
-                            <p class="icon horizontal-vertical-center">
-                                <a data-lightbox="portfolio" href="{% static "img/portfolio/main-07.jpg" %}"><i
-                                        class="fa fa-search-plus"></i></a>
-                            </p>
-                            <div class="caption text-center">
-                                <p class="title">John Donga</p>
-                                <p class="info">Lorem Ipsum is simply dummy text of the printing industry. </p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item engagement hit-and-run">
-                    <figure class="content wow fadeIn" data-wow-delay=".85s">
-                        <img src="{% static "img/portfolio/08.jpg" %}" class="img-100p" alt="portfolio">
-                        <figcaption class="overflow-content-full">
-                            <p class="icon horizontal-vertical-center">
-                                <a data-lightbox="portfolio" href="{% static "img/portfolio/main-08.jpg" %}"><i
-                                        class="fa fa-search-plus"></i></a>
-                            </p>
-                            <div class="caption text-center">
-                                <p class="title">John Donga</p>
-                                <p class="info">Lorem Ipsum is simply dummy text of the printing industry. </p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </div> <!-- // container -->
-</section>
-<!-- ========= //End portfolio section ========= -->
 
 
 <!-- ============== Start counter ============== -->
@@ -385,9 +380,11 @@
                         <figcaption class="caption">
                             <div class="color-overlay overflow-content-full">
                                 <ul class="social-icon horizontal-vertical-center list-inline">
-                                    <li><a href="#"><i class="fa fa-facebook-official "></i></a></li>
+                                    <li><a href="https://www.facebook.com/sam.ali.9659"><i
+                                            class="fa fa-facebook-official "></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus-square "></i></a></li>
+                                    <li><a href="https://www.instagram.com/sam.shad024/"><i
+                                            class="fa fa-instagram "></i></a></li>
                                 </ul>
                             </div>
                         </figcaption>
@@ -409,9 +406,11 @@
                         <figcaption class="caption">
                             <div class="color-overlay overflow-content-full">
                                 <ul class="social-icon horizontal-vertical-center list-inline">
-                                    <li><a href="#"><i class="fa fa-facebook-official "></i></a></li>
+                                    <li><a href="https://www.facebook.com/jeewansing"><i
+                                            class="fa fa-facebook-official "></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus-square "></i></a></li>
+                                    <li><a href="https://www.instagram.com/iamjeewanrajendersingh/"><i
+                                            class="fa fa-instagram "></i></a></li>
                                 </ul>
                             </div>
                         </figcaption>
@@ -433,9 +432,12 @@
                         <figcaption class="caption">
                             <div class="color-overlay overflow-content-full">
                                 <ul class="social-icon horizontal-vertical-center list-inline">
-                                    <li><a href="#"><i class="fa fa-facebook-official "></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus-square "></i></a></li>
+                                    <li><a href="https://www.facebook.com/amitgautam1994/"><i
+                                            class="fa fa-facebook-official "></i></a></li>
+                                    <li><a href="https://www.facebook.com/amitgautam1994/"><i
+                                            class="fa fa-twitter-square"></i></a></li>
+                                    <li><a href="https://www.instagram.com/amitgautam2.0/"><i
+                                            class="fa fa-instagram "></i></a></li>
                                 </ul>
                             </div>
                         </figcaption>
@@ -456,99 +458,6 @@
 <!-- ========= //End team section  ========= -->
 
 
-<!-- ============== Start client-feedback ============== -->
-<section id="client-feedback">
-    <div class="color-overlay ptb100">
-        <div class="container">
-            <h3 class="section-title wow fadeInDown">Happy Clients</h3>
-            <div class="row">
-                <div class="col-sm-10 col-sm-offset-1">
-                    <div class="custom-control">
-                        <p><span id="slider-prev"></span> <span id="slider-next"></span></p>
-                    </div>
-                    <ul class="bx-slider main-content">
-                        <li>
-                            <p>There is just something so fun about this one pager for the photography website
-                                template. The typography and load transitions are just awesome adding to the
-                                uplifting tone that all weddings aim to have.</p>
-                            <p class="client-name"><a href="#">J. Donga</a></p>
-                        </li>
-                        <li>
-                            <p>There is just something so fun about this one pager for the photography website
-                                template. The typography and load transitions are just awesome adding to the
-                                uplifting tone that all weddings aim to have.</p>
-                            <p class="client-name"><a href="#">D. John</a></p>
-                        </li>
-                        <li>
-                            <p>There is just something so fun about this one pager for the photography website
-                                template. The typography and load transitions are just awesome adding to the
-                                uplifting tone that all weddings aim to have.</p>
-                            <p class="client-name"><a href="#">S. Dongian</a></p>
-                        </li>
-                        <li>
-                            <p>There is just something so fun about this one pager for the photography website
-                                template. The typography and load transitions are just awesome adding to the
-                                uplifting tone that all weddings aim to have.</p>
-                            <p class="client-name"><a href="#">P. Donga</a></p>
-                        </li>
-                    </ul>
-                </div>
-            </div> <!-- //row -->
-        </div> <!-- //container -->
-    </div>
-</section>
-<!-- ========= //End client-feedback ========= -->
-
-
-<!-- ============== Start client section ============== -->
-<section id="our-clients" class="mtb100">
-    <div class="container">
-        <h3 class="section-title wow fadeInDown">Brands we work with</h3>
-        <p class="section-info col-sm-8 col-sm-offset-2 wow fadeInDown" data-wow-delay=".25s">
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-            alteration in some form, by injected humour, or randomised words.
-        </p>
-        <div class="clearfix"></div>
-
-        <div class="row">
-            <div class="col-sm-12">
-                <ul class="list-inline text-center">
-                    <li class="each-client"><a href="#"><img src="{% static "img/clients/logo-01.png" %}"
-                                                             alt="client"></a></li>
-                    <li class="each-client"><a href="#"><img src="{% static "img/clients/logo-02.png" %}"
-                                                             alt="client"></a></li>
-                    <li class="each-client"><a href="#"><img src="{% static "img/clients/logo-03.png" %}"
-                                                             alt="client"></a></li>
-                    <li class="each-client"><a href="#"><img src="{% static "img/clients/logo-04.png" %}"
-                                                             alt="client"></a></li>
-                    <li class="each-client"><a href="#"><img src="{% static "img/clients/logo-05.png" %}"
-                                                             alt="client"></a></li>
-                </ul>
-            </div>
-        </div> <!-- //row -->
-    </div> <!-- //container -->
-</section>
-<!-- ========= //End client section ========= -->
-
-<!-- ============== Start join-us section ============== -->
-<section id="join-us">
-    <div class="color-overlay ptb100">
-        <div class="container">
-            <h3 class="section-title wow fadeInDown">Learn photography tips & techniques</h3>
-            <p class="section-info col-sm-8 col-sm-offset-2 wow fadeInDown" data-wow-delay=".25s">
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration in some form, by injected humour, or randomised words.
-            </p>
-            <div class="clearfix"></div>
-            <p class="join-btn text-center wow zoomIn">
-                <a href="#" class="btn btn-primary">join now</a>
-            </p>
-        </div> <!-- //container -->
-    </div>
-</section>
-<!-- ========= //End join-us section ========= -->
-
-
 <!-- ============== Start contact section ============== -->
 <section id="contact">
     <div class="map-content">
@@ -565,7 +474,7 @@
                         below or you can find us on other social networks.
                     </p>
                     <div class="clearfix"></div>
-                    <form action="#" class="form wow fadeIn" data-wow-delay=".25s">
+                    <form action="{% url 'index' %}" class="form wow fadeIn" data-wow-delay=".25s">
                         <input type="text" class="form-control" placeholder="Your Full Name">
                         <input type="text" class="form-control" placeholder="Email Address">
                         <input type="text" class="form-control" placeholder="Contact Number">
@@ -586,17 +495,19 @@
     <div class="container bottom-part">
         <div class="row">
             <div class="col-sm-4 left-part">
-                <p class="footer-logo "><img src="{% static "img/logo.png" %}" alt="logo"></p><br/>
+                <p class="footer-logo "><img style="height: 19%; width: 60%;" src="{% static "logo.png" %}" alt="logo"></p><br/>
                 <p>This free website template is the first step to get you started with your personal photography
                     website. Learn the game and get some fame. Don't restrict your photography viewership to your
                     close circle. Go beyond and make it public on your photography website. </p>
             </div>
             <div class="col-sm-4 col-sm-offset-4">
                 <ul class="social-icon-footer list-inline mtb50">
-                    <li><a href="https://www.facebook.com/portraitsperfect"><i class="fa fa-facebook-square"></i></a></li>
+                    <li><a href="https://www.facebook.com/portraitsperfect"><i class="fa fa-facebook-square"></i></a>
+                    </li>
                     <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
                     <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCdUGzZH2Mo4YnNSZEtawCww"><i class="fa fa-youtube-square"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCdUGzZH2Mo4YnNSZEtawCww"><i
+                            class="fa fa-youtube-square"></i></a></li>
                     <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
                 </ul>
 

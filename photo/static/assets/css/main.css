@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
 
 
+
 @-moz-keyframes spinner {
     0% {
         -moz-transform: rotate(0deg);
@@ -86,7 +87,7 @@ section, summary, time, mark, audio, video {
 }
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+ hgroup, menu, nav, section {
     display: block;
 }
 
@@ -204,20 +205,6 @@ body, input, select, textarea {
 
 }
 
-a {
-    -moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-    -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-    -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-    transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-    border-bottom: dotted 1px;
-    color: #34a58e;
-    text-decoration: none;
-}
-
-a:hover {
-    border-bottom-color: transparent;
-    color: #34a58e !important;
-}
 
 strong, b {
     color: #ffffff;
@@ -1454,29 +1441,7 @@ body {
     padding: 0 0 4em 0;
 }
 
-#header {
-    -moz-transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-    -moz-transition: -moz-transform 1s ease;
-    -webkit-transition: -webkit-transform 1s ease;
-    -ms-transition: -ms-transform 1s ease;
-    transition: transform 1s ease;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    background: #1f2224;
-    bottom: -1em;
-    height: 5em;
-    left: 0;
-    line-height: 4em;
-    padding: 0 1.5em;
-    position: fixed;
-    user-select: none;
-    width: 100%;
-    z-index: 10002;
-}
+
 
 body.is-preload #header {
     -moz-transform: translateY(4em);
@@ -2035,13 +2000,3 @@ body.is-preload #main .thumb {
 
 }
 
-/* Footer */
-
-#footer .copyright {
-    color: #505051;
-    font-size: 0.9em;
-}
-
-#footer .copyright a {
-    color: inherit;
-}

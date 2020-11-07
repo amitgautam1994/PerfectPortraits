@@ -4,8 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Perfect Portraits - Pre-Wedding</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Portraits - Pre-wedding</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}"/>
+    <noscript>
+        <link rel="stylesheet" href="{% static 'assets/css/noscript.css' %}"/>
+    </noscript>
 
 
     <!-- FAVICON -->
@@ -30,7 +34,7 @@
     <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
     <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
     <link rel="stylesheet" href="{% static "css/animate.min.css" %}">
-    <link rel="stylesheet" href="{% static "css/responsive.css" %}">
+{#    <link rel="stylesheet" href="{% static "css/responsive.css" %}">#}
     <link rel="stylesheet" href="{% static "css/jquery.bxslider.css" %}">
     <link rel="stylesheet" href="{% static "css/jPushMenu.css" %}">
     <link rel="stylesheet" href="{% static "css/lightbox.css" %}">
@@ -41,6 +45,27 @@
     <script src="{% static "js/respond.min.js" %}"></script>
     <![endif]-->
 
+    <style>
+        body {
+            background-color: #FFF0FC;
+        }
+
+        #bg {
+
+            top: 0;
+            left: 0;
+
+            min-width: 100%;
+            min-height: 100%;
+            padding-bottom: 80px;
+        }
+
+        #space {
+            padding-top: 50px;
+        }
+    </style>
+
+
 </head> <!-- head -->
 <body>
 
@@ -50,76 +75,128 @@
     <div class="main-nav">
         <div class="logo-left">
             <a data-scroll href="{% url 'index' %}">
-                <img style="width: 20%; height: 5%;" src="{% static "logo.png" %}" alt="logo">
+                <img style="width: 15%; height: 3%;" src="{% static "logo.png" %}" alt="logo">
             </a>
-        </div>
-        <div class="menu-button toggle-menu menu-right push-body">
-            <button><i class="fa fa-bars"></i></button>
         </div>
     </div> <!-- //end main-nav -->
 
-    <!--=========================
-        Start area for Menu
-    ============================== -->
-    <nav id="main-navigation" class="nav-menu nav-menu-vertical nav-menu-right">
-        <ul class="list-inline">
-            <li class="current"><a href="#home">home</a></li>
-            <li><a href="#features">Our Services</a></li>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#teams">The Team</a></li>
-            <li><a href="#latest-blog">Blog</a></li>
-            <li><a href="#client-feedback">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- End of menu area -->
-
-
     <!-- ============== start home section  ============== -->
-    <section id="home">
-        <div id="home-slider">
-            <div class="item active" id="wed" style="background-image: url({% static "wed-main.jpg" %})">
+    <section id="start">
+        <div id="wed" style="image: url({% static "wed-main.jpg" %})">
+            <img id="bg" src="{% static 'pre-c.jpg' %}" alt="">
 
-            </div><!-- //item -->
-
-        </div>
+        </div><!-- //item -->
     </section>
 
 
+    <!-- Main -->
+    <div id="main">
+        <article class="thumb">
+            <a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt=""/></a>
+            <h2>Magna feugiat lorem</h2>
+            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+        </article>
+        <article class="thumb">
+            <a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt=""/></a>
+            <h2>Nisl adipiscing</h2>
+            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+        </article>
+        <article class="thumb">
+            <a href="images/fulls/03.jpg" class="image"><img src="images/thumbs/03.jpg" alt=""/></a>
+            <h2>Tempus aliquam veroeros</h2>
+            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+        </article>
+        <article class="thumb">
+            <a href="images/fulls/04.jpg" class="image"><img src="images/thumbs/04.jpg" alt=""/></a>
+            <h2>Aliquam ipsum sed dolore</h2>
+            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+        </article>
+        <article class="thumb">
+            <a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt=""/></a>
+            <h2>Cursis aliquam nisl</h2>
+            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+        </article>
+        <article class="thumb">
+            <a href="images/fulls/06.jpg" class="image"><img src="images/thumbs/06.jpg" alt=""/></a>
+            <h2>Sed consequat phasellus</h2>
+            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+        </article>
+        <article class="thumb">
+            <a href="images/fulls/07.jpg" class="image"><img src="images/thumbs/07.jpg" alt=""/></a>
+            <h2>Mauris id tellus arcu</h2>
+            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+        </article>
+        <article class="thumb">
+            <a href="images/fulls/08.jpg" class="image"><img src="images/thumbs/08.jpg" alt=""/></a>
+            <h2>Nunc vehicula id nulla</h2>
+            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+        </article>
+        <article class="thumb">
+            <a href="images/fulls/09.jpg" class="image"><img src="images/thumbs/09.jpg" alt=""/></a>
+            <h2>Neque et faucibus viverra</h2>
+            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+        </article>
+        <article class="thumb">
+            <a href="images/fulls/10.jpg" class="image"><img src="images/thumbs/10.jpg" alt=""/></a>
+            <h2>Mattis ante fermentum</h2>
+            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+        </article>
+        <article class="thumb">
+            <a href="images/fulls/11.jpg" class="image"><img src="images/thumbs/11.jpg" alt=""/></a>
+            <h2>Sed ac elementum arcu</h2>
+            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+        </article>
+        <article class="thumb">
+            <a href="images/fulls/12.jpg" class="image"><img src="images/thumbs/12.jpg" alt=""/></a>
+            <h2>Vehicula id nulla dignissim</h2>
+            <p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+        </article>
+    </div>
+
+
     <!-- ========= //End home section ========= -->
+    <div id="space">
+
+    </div>
 
 
     <!-- ============== Start contact section ============== -->
     <section id="contact">
-        <div class="map-content">
-            <div id="gmap">
-            </div>
+
+</div>
+<div class="color-overlay">
+    <div class="container">
+        <div class="row">
+
         </div>
-        <div class="color-overlay">
-            <div class="container">
-            </div> <!-- //container -->
-        </div>
-    </section>
-    <!-- ========= //End contact section ========= -->
+    </div> <!-- //row -->
+</div> <!-- //container -->
+</div>
+</section>
+<!-- ========= //End contact section ========= -->
 
 
-    <section id="footer">
+<!-- ============== Start footer ============== -->
+<section id="footer">
     <div class="container bottom-part">
         <div class="row">
             <div class="col-sm-4 left-part">
-                <p class="footer-logo "><img src="{% static "img/logo.png" %}" alt="logo"></p><br/>
+                    <span class="footer-logo "><img style="height: 19%; width: 60%; padding-bottom: 5px" src="{% static "logo.png" %}"
+                                                    alt="logo">
+                    </span><br/>
                 <p>This free website template is the first step to get you started with your personal photography
                     website. Learn the game and get some fame. Don't restrict your photography viewership to your
                     close circle. Go beyond and make it public on your photography website. </p>
             </div>
             <div class="col-sm-4 col-sm-offset-4">
                 <ul class="social-icon-footer list-inline mtb50">
-                    <li><a href="https://www.facebook.com/portraitsperfect"><i class="fa fa-facebook-square"></i></a></li>
+                    <li><a href="https://www.facebook.com/portraitsperfect"><i
+                            class="fa fa-facebook-square"></i></a>
+                    </li>
                     <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
                     <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCdUGzZH2Mo4YnNSZEtawCww"><i class="fa fa-youtube-square"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCdUGzZH2Mo4YnNSZEtawCww"><i
+                            class="fa fa-youtube-square"></i></a></li>
                     <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
                 </ul>
 
@@ -133,8 +210,8 @@
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-4">
                     <p class="info">
-                        &copy; <a href="https://www.frittt.com/" target="_blank">Frittt Templates</a>. Free
-                        Photography Website Template.
+                        &copy; <a href="https://www.frittt.com/" target="_blank">Copyright</a>.
+                        Amit Gautam
                     </p>
                 </div>
             </div> <!-- //row -->
@@ -180,6 +257,14 @@
 
 <!-- custom js -->
 <script src="{% static "js/app.js" %}"></script>
+
+<!-- Scripts -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.poptrox.min.js' %}"></script>
+<script src="{% static 'assets/js/browser.min.js' %}"></script>
+<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+<script src="{% static 'assets/js/util.js' %}"></script>
+<script src="{% static 'assets/js/main.js' %}"></script>
 
 
 </body>

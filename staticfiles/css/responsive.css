@@ -74,6 +74,9 @@
     	#features .header-content .title{
     		margin-bottom: 30px;
     	}
+		.about{
+			color: #999999;
+		}
 		.isotope .isotope-item{
 			width: 100%;
 		}

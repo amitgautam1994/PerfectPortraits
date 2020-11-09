@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
     <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
     <link rel="stylesheet" href="{% static "css/animate.min.css" %}">
-{#    <link rel="stylesheet" href="{% static "css/responsive.css" %}">#}
+    {#    <link rel="stylesheet" href="{% static "css/responsive.css" %}">#}
     <link rel="stylesheet" href="{% static "css/jquery.bxslider.css" %}">
     <link rel="stylesheet" href="{% static "css/jPushMenu.css" %}">
     <link rel="stylesheet" href="{% static "css/lightbox.css" %}">
@@ -58,6 +58,9 @@
             min-width: 100%;
             min-height: 100%;
             padding-bottom: 80px;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
         }
 
         #space {
@@ -181,7 +184,8 @@
     <div class="container bottom-part">
         <div class="row">
             <div class="col-sm-4 left-part">
-                    <span class="footer-logo "><img style="height: 19%; width: 60%; padding-bottom: 5px" src="{% static "logo.png" %}"
+                    <span class="footer-logo "><img style="height: 19%; width: 60%; padding-bottom: 5px"
+                                                    src="{% static "logo.png" %}"
                                                     alt="logo">
                     </span><br/>
                 <p>This free website template is the first step to get you started with your personal photography

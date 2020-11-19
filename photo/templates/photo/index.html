@@ -40,6 +40,12 @@
     <script src="{% static "js/html5shiv.js" %}"></script>
     <script src="{% static "js/respond.min.js" %}"></script>
     <![endif]-->
+    <style>
+        .carousel-inner > .carousel-item > img {
+            margin: 0;
+            max-width: 100%;
+        }
+    </style>
 
 </head> <!-- head -->
 <body>
@@ -79,26 +85,12 @@
     <section id="home">
         <div id="home-slider" class="carousel slide in" data-ride="carousel">
             <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li class="active" data-slide-to="0" data-target="#home-slider"></li>
-                <li data-slide-to="1" data-target="#home-slider" class=""></li>
-                <li data-slide-to="2" data-target="#home-slider" class=""></li>
-            </ol>
 
-            <div class="carousel-inner">
-                <div class="item active" style="background-image: url({% static "img/slider/01.jpg" %})">
+
+            <div class="carousel-inner" >
+                <div class="item active" style="background-image: url({% static "img/slider/01.jpg" %}); max-height: 300px; max-width: 100%">
                     <div class="col-sm-offset-1 caption caption-wide">
 
-                    </div>
-                </div><!-- //item -->
-                <div class="item" style="background-image: url({% static "img/slider/02.jpg" %})">
-                    <div class="col-sm-offset-1 caption caption-wide">
-
-                    </div>
-                </div><!-- //item -->
-                <div class="item" style="background-image: url({% static "img/slider/03.jpg" %})">
-                    <div class="col-sm-offset-1 caption">
-                        <h1 class="main-title wow fadeInUp" data-wow-delay=".25s">Cherish every<br/>moment</h1>
                     </div>
                 </div><!-- //item -->
             </div>

@@ -395,6 +395,7 @@ a:focus {
     position: relative;
     height: auto;
     max-width: 800px;
+    max-height: 400px;
 }
 
 #home-slider .item {

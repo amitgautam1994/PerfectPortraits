@@ -2367,7 +2367,25 @@
 
         .cid-qUhP1pQk4d h4 {
             margin: 0;
-        }</style>
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe, .video-container object, .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-position-observer"
@@ -2385,8 +2403,6 @@
 
 </head>
 <body>
-
-
 
 
 <section class="menu1 menu horizontal-menu animated-menu cid-qUgt2ZrTr6" id="menu1-1s">
@@ -2433,7 +2449,7 @@
             <span class="navbar-logo">
                 <a href="{% url 'index' %}">
                 <img src="{% static "logoo.png" %}" layout="responsive" style="max-height: 60px; max-width: 100px "
-                         alt="Perfect Portraits" class="mobirise-loader">
+                     alt="Perfect Portraits" class="mobirise-loader">
 </a>
 
                 </img>
@@ -2444,9 +2460,6 @@
     </nav>
 
     <!-- AMP plug -->
-
-
-
 
 
 </section>
@@ -2539,7 +2552,7 @@
             </div>
 
             <div class="mbr-col-lg-3 mbr-col-md-6 mbr-col-sm-12 ">
-                <amp-img layout="responsive" class="carousel-img" src="{% static "gallery/pic-8.jpg" %}"
+                <amp-img layout="responsive" class="carousel-img" src="{% static "gallery/pic-49.jpg" %}"
                          on="tap:lightbox8"
                          role="button" tabindex="0" height="300" width="343" alt="AMP Gallery Template">
 
@@ -2940,6 +2953,17 @@
     <amp-image-lightbox id="lightbox6" layout="nodisplay"></amp-image-lightbox>
     <amp-image-lightbox id="lightbox7" layout="nodisplay"></amp-image-lightbox>
     <amp-image-lightbox id="lightbox8" layout="nodisplay"></amp-image-lightbox>
+</section>
+
+<br>
+<section class="gallery1 cid-qUgPgETB5y">
+    <div class="container">
+        <div class="video-container">
+            <iframe class="video"
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            </iframe>
+        </div>
+    </div>
 </section>
 
 <section class="footer1 cid-qUhP1pQk4d" id="footer1-3b" style="background: rgba(240, 57, 76, 0.95)">
